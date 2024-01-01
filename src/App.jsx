@@ -24,3 +24,6 @@ export default App;
 // If I import the Message component
 // it renders properly
 
+// If there's no name passed as a prop
+// it renders the message without the
+// prop 
