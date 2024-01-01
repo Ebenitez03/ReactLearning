@@ -1,5 +1,6 @@
 import Hello from "./componentes/Hello";
 import Message from "./componentes/Message";
+import { Welcome } from "./componentes/Welcome";
 export function App() {
   return (
     <div>
@@ -9,6 +10,8 @@ export function App() {
       <Hello/>
       <hr/>
       <Message/>
+      <Welcome name={"Luisa"}/>
+      <Welcome/>
     </div>
   );
 }
@@ -20,3 +23,4 @@ export default App;
 
 // If I import the Message component
 // it renders properly
+
