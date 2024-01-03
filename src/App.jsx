@@ -12,6 +12,11 @@ export function App() {
       <Message/>
       <Welcome name={"Luisa"} age={16}/>
       <Welcome/>
+      <Welcome age={67}/>
+      <Welcome age={16}/>
+      <Welcome name={"John"} age={19}/>
+      <Welcome name={"John"} age={64}/>
+
     </div>
   );
 }
