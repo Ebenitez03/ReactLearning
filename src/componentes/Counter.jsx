@@ -8,7 +8,8 @@ export function Counter(){
     }
     return(
         <div>
-            <button onClick={handleSum}><h2>{counter}</h2></button>
+            <h2>{counter}</h2>
+            <button onClick={handleSum}>Sum</button>
         </div>
     );
 }
