@@ -1,6 +1,9 @@
+import AlertClock from "./componentes/AlertClock";
 import Hello from "./componentes/Hello";
 import Message from "./componentes/Message";
 import { Welcome } from "./componentes/Welcome";
+import { Form } from "./componentes/Form";
+import Counter from "./componentes/Counter";
 export function App() {
   return (
     <div>
@@ -16,7 +19,9 @@ export function App() {
       <Welcome age={16}/>
       <Welcome name={"John"} age={19}/>
       <Welcome name={"John"} age={64}/>
-
+      <AlertClock></AlertClock>
+      <Form></Form>
+      <Counter/>
     </div>
   );
 }
