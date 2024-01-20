@@ -1,10 +1,10 @@
 import { useState } from "react";
 
 
-export function Counter(){
-    const [counter, setCounter]= useState(0);
+export function Counter({initialValue=0, sum=1}){
+    const [counter, setCounter]= useState(initialValue);
     function handleSum(){
-        setCounter((c)=>c+1);
+        setCounter((c)=>c+sum);
     }
     return(
         <div>
