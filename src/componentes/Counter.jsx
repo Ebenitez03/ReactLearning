@@ -4,7 +4,7 @@ import { useState } from "react";
 export function Counter(){
     const [counter, setCounter]= useState(0);
     function handleSum(){
-        setCounter(counter+1);
+        setCounter((c)=>c+1);
     }
     return(
         <div>
@@ -14,3 +14,5 @@ export function Counter(){
     );
 }
 export default Counter;
+
+//With this version the updates will be better
