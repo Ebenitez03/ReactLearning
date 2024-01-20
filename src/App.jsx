@@ -2,6 +2,7 @@ import AlertClock from "./componentes/AlertClock";
 import Hello from "./componentes/Hello";
 import Message from "./componentes/Message";
 import { Welcome } from "./componentes/Welcome";
+import Counter from "./componentes/Counter";
 export function App() {
   return (
     <div>
@@ -18,6 +19,8 @@ export function App() {
       <Welcome name={"John"} age={19}/>
       <Welcome name={"John"} age={64}/>
       <AlertClock></AlertClock>
+      <Counter/>
+
     </div>
   );
 }
