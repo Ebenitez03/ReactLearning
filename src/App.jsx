@@ -20,6 +20,7 @@ export function App() {
       <Welcome name={"John"} age={64}/>
       <AlertClock></AlertClock>
       <Counter/>
+
     </div>
   );
 }
