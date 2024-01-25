@@ -5,6 +5,7 @@ import { Welcome } from "./componentes/Welcome";
 import Counter from "./componentes/Counter";
 import Clock from "./componentes/Clock";
 import MouseClicker from "./componentes/MouseClicker";
+import InteractiveWelcome from "./componentes/InteractiveWelcome";
 export function App() {
   return (
     <div>
@@ -24,6 +25,7 @@ export function App() {
       <Clock/>
       <Counter/>
       <MouseClicker/>
+      <InteractiveWelcome/>
     </div>
   );
 }
