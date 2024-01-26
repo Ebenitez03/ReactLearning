@@ -1,5 +1,5 @@
 import { useState } from "react";
-import OnLogin from "./hooks/OnLogin";
+import OnLogin from "./OnLogin";
 
 export function Login() {
   const [user, setUser] = useState({ name: "", password: "", session: false });
@@ -13,7 +13,10 @@ export function Login() {
     });
   }
   console.log(user);
-
+  function handleReset(event) {
+    setUser({ name: "", password: "", session: false });
+    //It changes de checkbox status but not the checked
+  }
   return (
     <div>
       <input onChange={handleChange} type="text" id="name" value={user.name} />
@@ -29,8 +32,10 @@ export function Login() {
         id="session"
         value={user.session}
       />
-      <OnLogin name={user.name} password={user.password}/>
-      </div>
+      <OnLogin name={user.name} password={user.password} />
+
+      <button onClick={handleReset}>Reset</button>
+    </div>
   );
 }
 export default Login;
