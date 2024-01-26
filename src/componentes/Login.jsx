@@ -1,4 +1,5 @@
 import { useState } from "react";
+import OnLogin from "./hooks/OnLogin";
 
 export function Login() {
   const [user, setUser] = useState({ name: "", password: "", session: false });
@@ -28,12 +29,7 @@ export function Login() {
         id="session"
         value={user.session}
       />
-      {user && (<div>
-        <p>{user.name}</p>
-        <p>{user.password}</p>
-        {user.session && <p>You have accepted remembering your session</p>}
-        </div>)
-      }
+      <OnLogin name={user.name} password={user.password}/>
       </div>
   );
 }
