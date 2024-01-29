@@ -6,10 +6,12 @@ import Clock from "./componentes/Clock";
 import MouseClicker from "./componentes/MouseClicker";
 import InteractiveWelcome from "./componentes/InteractiveWelcome";
 import Login from "./componentes/Login";
+import UncontrolledLogin from "./componentes/UncontrolledLogin";
 export function App() {
   return (
     <div>
       <Hello />
+      <UncontrolledLogin/>
       <Login/>
       <hr/>
       <Message/>
