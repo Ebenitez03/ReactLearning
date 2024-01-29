@@ -7,6 +7,7 @@ export function UncontrolledLogin() {
       password: formData.get("password"),
       session: formData.get("session") === "on" ? true : false,
     };
+    console.log(formData.get("name"))
     console.log({data})
 
   }
@@ -21,3 +22,5 @@ export function UncontrolledLogin() {
   );
 }
 export default UncontrolledLogin;
+
+//I really don't know the pros and cons, but I rather controlled forms
