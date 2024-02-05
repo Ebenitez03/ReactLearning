@@ -7,8 +7,10 @@ import MouseClicker from "./componentes/MouseClicker";
 import InteractiveWelcome from "./componentes/InteractiveWelcome";
 import Login from "./componentes/Login";
 import UncontrolledLogin from "./componentes/UncontrolledLogin";
+import { StrictMode } from "react";
 export function App() {
   return (
+    <StrictMode>
     <div>
       <Hello />
       <UncontrolledLogin/>
@@ -21,6 +23,7 @@ export function App() {
       <MouseClicker/>
       <InteractiveWelcome/>
     </div>
+    </StrictMode>
   );
 }
 export default App;
