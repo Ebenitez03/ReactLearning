@@ -1,5 +1,6 @@
 import { useState } from "react";
 import OnLogin from "./OnLogin";
+import FocusableInput from "./FocusableInput";
 
 export function Login() {
   const [user, setUser] = useState({ name: "", password: "", session: false });
@@ -19,6 +20,7 @@ export function Login() {
   }
   return (
     <div>
+      <FocusableInput/>
       <input onChange={handleChange} type="text" id="name" value={user.name} />
       <input
         onChange={handleChange}
