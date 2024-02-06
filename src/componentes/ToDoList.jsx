@@ -6,14 +6,14 @@ export function ToDoList() {
   function handleChange(event) {
     setToDo(event.currentTarget.value);
   }
-  console.log(toDo);
 
   function handleSubmit() {
     setToDos((prevToDos) => [...prevToDos, toDo]);
     setToDo("");
-    console.log(toDos);
   }
-  console.log(toDos);
+  function handleReset() {
+    setToDos([]);
+  }
 
   return (
     <div>
@@ -21,6 +21,7 @@ export function ToDoList() {
       <button onClick={handleSubmit} type="submit">
         Añade un ToDo
       </button>
+      <button onClick={handleReset}>Borra la lista</button>
       {toDos.map((toDo, index) => (
         <li key={index}>{toDo}</li>
       ))}
