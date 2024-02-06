@@ -3,6 +3,7 @@ import { useState } from "react";
 export function ToDoList() {
   const [toDos, setToDos] = useState([]);
   const [toDo, setToDo] = useState("");
+
   function handleChange(event) {
     setToDo(event.currentTarget.value);
   }
@@ -11,8 +12,13 @@ export function ToDoList() {
     setToDos((prevToDos) => [...prevToDos, toDo]);
     setToDo("");
   }
+
   function handleReset() {
     setToDos([]);
+  }
+
+  function handleRemove(index) {
+    setToDos((prevToDos) => prevToDos.filter((_, i) => i !== index));
   }
 
   return (
@@ -22,10 +28,16 @@ export function ToDoList() {
         Añade un ToDo
       </button>
       <button onClick={handleReset}>Borra la lista</button>
-      {toDos.map((toDo, index) => (
-        <li key={index}>{toDo}</li>
-      ))}
+      <ul>
+        {toDos.map((toDo, index) => (
+          <li key={index}>
+            {toDo}
+            <button onClick={() => handleRemove(index)}>Remove</button>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
+
 export default ToDoList;
