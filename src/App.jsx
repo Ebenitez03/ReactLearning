@@ -8,7 +8,9 @@ import InteractiveWelcome from "./componentes/InteractiveWelcome";
 import Login from "./componentes/Login";
 import UncontrolledLogin from "./componentes/UncontrolledLogin";
 import { StrictMode } from "react";
+import Colors from "./componentes/Colors";
 export function App() {
+  const colors=[{name:"red", id:1},{name:"blue", id:2},{name:"green",id:3}]
   return (
     <StrictMode>
     <div>
@@ -22,6 +24,7 @@ export function App() {
       <Counter/>
       <MouseClicker/>
       <InteractiveWelcome/>
+      <Colors colors={colors}/>
     </div>
     </StrictMode>
   );
