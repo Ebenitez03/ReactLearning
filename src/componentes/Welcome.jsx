@@ -1,9 +1,8 @@
 import Age from "./Age";
-import styles from "../styles/index.module.scss"
 
 export function Welcome({ name = "Jimmy", age }) {
   return (
-    <div className={styles.welcome}>
+    <div className="welcome">
         <p>Welcome, <strong>{name}</strong></p>
         {!!age && <Age age={age}/>}
         {age && <Age age={age}/>}
