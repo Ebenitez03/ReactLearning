@@ -2,7 +2,7 @@ import AlertClock from "./componentes/AlertClock";
 import Hello from "./componentes/Hello";
 import Message from "./componentes/Message";
 import Counter from "./componentes/Counter";
-import Clock from "./componentes/Clock";
+import Clock from "./componentes/Clock/Clock";
 import MouseClicker from "./componentes/MouseClicker";
 import InteractiveWelcome from "./componentes/InteractiveWelcome";
 import Login from "./componentes/Login";
