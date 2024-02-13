@@ -24,14 +24,29 @@ export function ToDoList() {
 
   return (
     <div className={styles.ToDoList}>
-      <input className={styles.toDo} id="toDo" value={toDo} onChange={handleChange} type="text" />
+      <input
+        className={styles.toDo}
+        id="toDo"
+        value={toDo}
+        onChange={handleChange}
+        type="text"
+      />
       <button className={styles.button} onClick={handleSubmit} type="submit">
-      Añade un ToDo
-    </button><button className={styles.reset} onClick={handleReset}>Borra la lista</button><ul>
+        Añade un ToDo
+      </button>
+      <button className={styles.reset} onClick={handleReset}>
+        Borra la lista
+      </button>
+      <ul>
         {toDos.map((toDo, index) => (
           <li key={index}>
             {toDo}
-            <button className={styles.remove} onClick={() => handleRemove(index)}>Remove</button>
+            <button
+              className={styles.remove}
+              onClick={() => handleRemove(index)}
+            >
+              Remove
+            </button>
           </li>
         ))}
       </ul>
