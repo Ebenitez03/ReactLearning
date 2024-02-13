@@ -10,11 +10,13 @@ import UncontrolledLogin from "./componentes/UncontrolledLogin";
 import { StrictMode } from "react";
 import Colors from "./componentes/Colors";
 import ToDoList from "./componentes/ToDoList";
+import Welcome from "./componentes/Welcome";
 export function App() {
   const colors=[{name:"red", id:1},{name:"blue", id:2},{name:"green",id:3}]
   return (
     <StrictMode>
     <div>
+      <Welcome/>
       <Hello />
       <UncontrolledLogin/>
       <Login/>
